@@ -38,6 +38,25 @@ python3 wavextrema/bem_examples.py example1  # Run basic 1d
 python3 wavextrema/bem_examples.py example2  # Run basic 2d
 ```
 
+## Using a mesh
+
+If you make a mesh using gmsh and make a physical group
+"emit", you can see how normal emission will effect directional
+frequency response.
+
+```shell
+python3 wavextrema/run_directivity.py meshes/example_waveguide.msh
+```
+produces
+
+![Mesh visualization](docs/images/mesh_visualization.png)
+
+![Frequency response visualization](docs/images/example_graphs.png)
+
+
+
+
+
 
 Apache header:
 
